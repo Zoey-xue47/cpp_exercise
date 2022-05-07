@@ -1,9 +1,8 @@
-#include "test.cpp"
-#include <string>
+// #include <string>
 
-void printString(std::string);
+// void printString(std::string);
 
-int main(){
-    std::string word = "Hello World!";
-    printString(word);
-}
+// int main1(){
+//     std::string word = "Hello World!";
+//     printString(word);
+// }

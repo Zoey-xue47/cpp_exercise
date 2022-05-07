@@ -14,12 +14,17 @@ file(GLOB SOURCES_EXERCISE
     ${CMAKE_CURRENT_SOURCE_DIR}/exercise/*.hpp
     )
 
-
-add_executable(cpp_test ${SOURCES})
-
-# target_include_directories(cpp_test PUBLIC
-#     ${CMAKE_CURRENT_SOURCE_DIR}/exercise
+# file(GLOB SOURCES_TONGXUNGUANLIXITONG
+#     ${CMAKE_CURRENT_SOURCE_DIR}/tongxunluguanli/*.cpp
+#     ${CMAKE_CURRENT_SOURCE_DIR}/tongxunluguanli/*.hpp
 #     )
+
+
+add_executable(cpp_test ${SOURCES} ${SOURCES_EXERCISE} ${SOURCES_TONGXUNGUANLIXITONG})
+
+#  target_include_directories(cpp_test PUBLIC
+#      ${CMAKE_CURRENT_SOURCE_DIR}/exercise
+#   )
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
